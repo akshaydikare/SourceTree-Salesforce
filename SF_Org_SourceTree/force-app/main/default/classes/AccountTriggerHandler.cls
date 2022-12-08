@@ -16,6 +16,7 @@ public with sharing class AccountTriggerHandler extends TriggerHandler {
     /**
      * @description Custom exception class
      * @auther : Akshay
+     *Changes added.
      */
     public class AccountTriggerHandlerException extends Exception {
     }
