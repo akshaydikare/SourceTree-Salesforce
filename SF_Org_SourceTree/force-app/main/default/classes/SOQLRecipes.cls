@@ -13,11 +13,12 @@ public with sharing class SOQLRecipes {
      * @example
      * List<Account> results = SOQLRecipes.querySingleObject();
      * System.debug(results);
+     * Modified : Added Rating, Industry and AnnualRevenue
      **/
     public static List<Account> getRecords() {
         List<Account> accounts = new List<Account>();
         accounts = [
-            SELECT Name, ShippingStreet, ShippingCity, Rating, Industry
+            SELECT Name, ShippingStreet, ShippingCity, Rating, Industry, AnnualRevenue
             FROM Account
             WITH SECURITY_ENFORCED
         ];
