@@ -17,7 +17,7 @@ public with sharing class SOQLRecipes {
     public static List<Account> getRecords() {
         List<Account> accounts = new List<Account>();
         accounts = [
-            SELECT Name, ShippingStreet, ShippingCity
+            SELECT Name, ShippingStreet, ShippingCity, Rating, Industry
             FROM Account
             WITH SECURITY_ENFORCED
         ];
